@@ -17,11 +17,8 @@ const create_feedback = catchAsync(async (req, res) => {
 const get_all_feedbacks = catchAsync(async (req, res) => {
     const query: TFeedbackQuery = {
         search: req.query.search as string | undefined,
-        category: req.query.category as string | undefined,
-        priority: req.query.priority as string | undefined,
-        sentiment: req.query.sentiment as string | undefined,
-        team: req.query.team as string | undefined,
     };
+
 
     const { feedbacks, total } = await feedback_services.get_all_feedbacks_from_db(query);
 

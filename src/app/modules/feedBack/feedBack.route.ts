@@ -57,28 +57,6 @@ feedbackRoute.post(
  *         description: Search across name, email, and content fields
  *         schema:
  *           type: string
- *       - name: category
- *         in: query
- *         description: Filter by AI-assigned category (e.g. Bug, Feature Request)
- *         schema:
- *           type: string
- *       - name: priority
- *         in: query
- *         description: Filter by priority level
- *         schema:
- *           type: string
- *           enum: [Low, Medium, High, Critical]
- *       - name: sentiment
- *         in: query
- *         description: Filter by sentiment
- *         schema:
- *           type: string
- *           enum: [Positive, Neutral, Negative]
- *       - name: team
- *         in: query
- *         description: Filter by AI-assigned team (e.g. Engineering, Design)
- *         schema:
- *           type: string
  *     responses:
  *       200:
  *         description: List of feedbacks returned successfully

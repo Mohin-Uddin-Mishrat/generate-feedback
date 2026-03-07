@@ -17,8 +17,5 @@ export type TCreateFeedbackPayload = {
 
 export type TFeedbackQuery = {
     search?: string;
-    category?: string;
-    priority?: string;
-    sentiment?: string;
-    team?: string;
 };
+
