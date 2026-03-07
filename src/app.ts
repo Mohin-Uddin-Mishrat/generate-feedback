@@ -7,11 +7,11 @@ import appRouter from './routes'
 import swaggerUi from 'swagger-ui-express';
 import swaggerSpec from './app/configs/swagger';
 
-// define app
 const app = express()
 
-// middleware
+
 app.use(cors({
+
     origin: ["http://localhost:3000"]
 }))
 app.use(express.json({ limit: "100mb" }))
@@ -31,8 +31,8 @@ app.get("/api-docs-json", (req, res) => res.json(swaggerSpec));
 
 app.use("/api", appRouter)
 
-// stating point
 app.get('/', (req: Request, res: Response) => {
+
     res.status(200).json({
         status: 'success',
         message: 'Server is running successful !!',
@@ -40,9 +40,9 @@ app.get('/', (req: Request, res: Response) => {
     });
 });
 
-// global error handler
 app.use(globalErrorHandler);
+
 app.use(notFound);
 
-// export app
 export default app;
+
