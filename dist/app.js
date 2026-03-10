@@ -13,7 +13,7 @@ const swagger_ui_express_1 = __importDefault(require("swagger-ui-express"));
 const swagger_1 = __importDefault(require("./app/configs/swagger"));
 const app = (0, express_1.default)();
 app.use((0, cors_1.default)({
-    origin: ["http://localhost:3000", "http://localhost:5173", "https://generate-feedback.onrender.com"],
+    origin: ["http://localhost:3000", "http://localhost:5173", "https://generate-feedback.onrender.com", "https://generate-feedback-frontend-alpha.vercel.app"],
     credentials: true
 }));
 app.use(express_1.default.json({ limit: "100mb" }));
