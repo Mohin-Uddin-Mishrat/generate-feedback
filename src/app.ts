@@ -11,8 +11,8 @@ const app = express()
 
 
 app.use(cors({
-
-    origin: ["http://localhost:3000", "*" , "https://generate-feedback.onrender.com"]
+    origin: ["http://localhost:3000", "http://localhost:5173", "https://generate-feedback.onrender.com"],
+    credentials: true
 }))
 app.use(express.json({ limit: "100mb" }))
 app.use(express.raw())

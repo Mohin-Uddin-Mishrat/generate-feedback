@@ -9,7 +9,10 @@ const options: swaggerJsdoc.Options = {
             version: "1.0.0",
             description: "REST API with AI-powered feedback analysis using Google Gemini",
         },
-        servers: [{ url: "https://generate-feedback.onrender.com", description: "Local Dev Server" }],
+        servers: [
+            { url: "https://generate-feedback.onrender.com", description: "Production Server (Render)" },
+            { url: "http://localhost:5000", description: "Local Development Server" }
+        ],
         components: {
             schemas: {
                 CreateFeedbackPayload: {
