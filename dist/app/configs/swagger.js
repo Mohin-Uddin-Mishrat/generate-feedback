@@ -13,7 +13,9 @@ const options = {
             version: "1.0.0",
             description: "REST API with AI-powered feedback analysis using Google Gemini",
         },
-        servers: [{ url: "http://localhost:5000", description: "Local Dev Server" }],
+        servers: [
+            { url: "https://generate-feedback.onrender.com", description: "Production Server" },
+        ],
         components: {
             schemas: {
                 CreateFeedbackPayload: {
