@@ -11,7 +11,8 @@ const options: swaggerJsdoc.Options = {
         },
         servers: [
             { url: "/", description: "Current Environment (Automatic)" },
-            { url: "https://generate-feedback.onrender.com", description: "Production Server" }
+            { url: "https://generate-feedback.onrender.com", description: "Production Server" },
+            { url: "http://localhost:5000", description: "Local Development Server" }
         ],
         components: {
             schemas: {
